@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width, initial-scale=1.0">
+        <title>Porfolio</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--MENU ENCABEZADO-->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Erlyn</a>
+                </div>
+                <nav id="nav" >
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+         <!--SECCIÓN Inicio-->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="./img/erlyn.jpg">
+                </div>
+                <h1>ERLYN NARANJO</h1>
+                <h2>Estudiante de Ingenieria de Software</h2>
+                <div class="redes"> 
+                    <a href="https://www.linkedin.com/in/stuard-naranjo-986688271/"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/StuardN"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCIÓN SOBRE MI-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Erlyn Naranjo.</span>¡Hola! Bienvenido a mi portafolio, soy un estudiante de la ingeniería de software, me gusta estar en constante aprendizaje sobre las últimas tendencias tecnológicas. 
+                                                        Aquí podrás encontrar mi información personal,
+                                                        así como pequeños proyectos que he realizado en mis tiempos libres para poner en práctica mis conocimiento y habilidades. 
+                                                        ¡Espero que disfrutes explorando mi portafolio!</p>
+                <div class="fila">
+                     <!--datos personales -->
+                     <div class="col">
+                        <h3>datos personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                03-10-2001
+                            </li>
+                            <li>
+                                <strong>Celular</strong>
+                                0981604878
+                            </li>
+                            <li>
+                                <strong>Gmail</strong>
+                                erlynstuars@gmail.com
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                              enaranjob.vercel.app/about
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Gye Calle B entre la 45 y la 46
+                            </li>
+                        </ul>
+                     </div>
+                         <!--Intereses-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="intereses">
+                                <i class="fa-solid fa-headphones"></i>
+                                <sapn>Música</sapn>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-mountain-sun"></i>
+                                <sapn>Viaje</sapn>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-person-running"></i>
+                                <sapn>Deporte</sapn>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-camera"></i>
+                                <sapn>Foto</sapn>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </section>
+
+        <!--SECCION DE SKILL-->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Tecnical Skills</h3>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso python">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Htmlcss</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Bootstrap</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Django</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Base de Datos</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION DE CURRICULUM-->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Ingeniería de software</h4>
+                            <span class="casa">Universidad Estatal de Milagro</span>
+                            <span class="fecha">2019-actualidad</span>
+                            <p>
+                                Estoy actualmente cursando el sexto semestre y ha sido un gran desafío llegar hasta aquí, pero gracias a la colaboración de mis compañeros de clase y a consejos de mis profesores, 
+                                he aprendido muchas cosas como trabajar en equipo. Estoy ansioso por obtener mi título.
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col derecha">
+                        <h3>Educación</h3>
+                        <div class="item der">
+                            <h4>Ingeniería de software</h4>
+                            <span class="casa">Esducación Autodidacta</span>
+                            <span class="fecha">Tiempos Libres</span>
+                            <p>
+                                Aprovecho mis tiempos libres para adquirir nuevos conocimientos a través de cursos en línea, ya sea en plataformas como YouTube o en escuelas de programación. 
+                                Me gusta aprender cosas nuevas y ampliar mi comprensión sobre diferentes temas,
+                                 y estos cursos me permiten hacerlo de una manera efectiva y práctica.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION PORFOLIO-->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="./img/IMG1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/IMG1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/IMG1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/IMG1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/IMG1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/IMG1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/stuard-naranjo-986688271/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/StuardN"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lobster&family=Mali&family=Righteous&family=Work+Sans:wght@100;200;400;600;800&display=swap');
+
+ *{
+    box-sizing: border-box;
+    font-family: 'work Sans';
+    margin: 0;
+    padding:0;
+ }
+
+ html{
+    /*perminte deslizar cuando hago clic en el menú*/
+    scroll-behavior: smooth;
+ }
+
+ /*MENU*/
+ .contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 11;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+/*el menu lo pone horiontal pero las palabraas unidas*/
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+/*Separa las palabras dentro del navbar y se le cambia el color */
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+/*señala con color cuando el cursor pasa sobre las palabras del v¿navbar*/
+.contenedor-header header nav ul li a:hover{
+    color: #1cb698;
+}
+/*hacer que duncione la hamburguesa*/
+.nav-responsive{
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*  SECCION DE INICIO*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+/*Centrar el contenido de la secciom y agrega color de fondo */
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+/*Modifica la imgane le pone un borde */
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border:10px solid #1cb698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+/*Le da tamaño al h1*/
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+/*borde redondo a los iconos*/
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+/*al momwnto de poner el mause ponerle color*/
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1cb698;
+}
+
+/*SOBRE MI*/
+/*pone color a la seccion sobremi*/
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+/*centra la seccion*/
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*tamaño y letra del parrafo*/
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+/*color al spam que se encunetra en la etiqueta p*/
+.sobremi .contenido-seccion p span{
+    color: #1cb698;
+    font-weight: bold;
+}
+/*adapta todo lo que contiene fila*/
+.sobremi .fila{
+    display: flex;
+}
+/*le da ancho a la columna*/
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size:28px;
+    font-family: 'Righteous';
+    margin-bottom:25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+   margin:12px 0;
+}
+/*cambia de color a la lista*/
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color:#1cb698;
+    width: 130px;
+}
+/**adapta la fila interes*/
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+/*le da formas de cajitas bordes a laos interess*/
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #1cb698;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{
+     font-size: 30px;
+     margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color:#fff;
+    position: relative;
+    z-index: 10;
+}
+/*creando animacion al boton*/
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: .1;
+    transition: 1s;
+}
+/*le da el movimiento a la accion*/
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/*SECCION DE SKILLLLLL*/
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+/*le da tamaño al span*/
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+
+}
+/*creacion de la barra del poroccentajje*/
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/*creacion del progresso en la barra*/
+.skills .skill .progreso{
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 50%;
+}
+
+/*ponerle estilo al numero de porcentaje rendondos y verdes */
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/*Estas clases se agregan dinamicamnete mediante javascript*/
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+
+.skills .skill .bootstrap{
+    width: 0%;
+    animation: 2s bootstrap forwards;
+}
+@keyframes bootstrap{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+
+.skills .skill .django{
+    width: 0%;
+    animation: 2s django forwards;
+}
+@keyframes django{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+
+.skills .skill .BBDD{
+    width: 0%;
+    animation: 2s BBDD forwards;
+}
+@keyframes BBDD{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+/*SECCION CURRICULUM*/
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+/*sapce bett¿ween me crea otra linea central*/
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+/*se pone una linea en el centro*/
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+/*le pone un borde de fondo a  item*/
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+/*pone una line en el borde izquiedo*/
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+/*pone una linea horizontar en la parte dercha*/
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top:50%;
+    right: -47px;
+    z-index: 5;
+}
+/*le pone un circulo al la linea anterior*/
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+/*pone una linea horizontar en la parte dercha*/
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top:50%;
+    left: -47px;
+    z-index: 5;
+}
+/*le pone un circulo al la linea anterior*/
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+
+/*Sección Porfolio*/
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+/*Centra la imagen*/
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*divide en columnas las junta pero un desastre*/
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+/*arregla las imagnes la pone en orden*/
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+/*le da resaltar y hace amas grande el h3*/
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transform: 1s;
+}
+/*le da opacidad */
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+
+.contacto{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*footer*/
+/*le pone color y centra el footrt*/
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+/*le da circulos a los iconos*/
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+/*le da imagen y posicion al icono de arriba*/
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    } /*se ve la hamburguesa pero los contactos se ven aqunque se achique la pagina*/
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    /*lo que contiene ul se pone de forma de columna al moneto de poner la pagina pequeña*/
+    nav.responsive ul{
+        display: block !important;
+    }
+    /*agrego borde debajo de cada ul en la li*/
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: 100%;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+    }
