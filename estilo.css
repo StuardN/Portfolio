@@ -298,9 +298,9 @@
 .skills .skill .barra-skill span{
     position: absolute;
     height: 40px;
-    width: 40px;
+    width: 50px;
     background-color: #1CB698;
-    border-radius: 50px;
+    border-radius: 70px;
     line-height: 40px;
     text-align: center;
     top: -17px;
