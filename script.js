@@ -45,3 +45,14 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+function descargarPDF() {
+    const url = "CURRICULUM-ERLYN NARANJO.pdf";
+    const nombreArchivo = "CURRICULUM-ERLYN NARANJO.pdf";
+    const enlace = document.createElement("a")
+
+    enlace.href = url;
+    enlace.download = nombreArchivo;
+
+    enlace.click();
+}
